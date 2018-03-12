@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Twitter Launch AnimationVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TwitterLaunchAnimationVC" customModule="TwitterAppLaunchTypeAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhz-Tm-3WS" userLabel="mainView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twee" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-SZ-ivY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-KI-oPy" userLabel="overlayView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="659"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.45751284246575341" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="I3R-SZ-ivY" firstAttribute="top" secondItem="qhz-Tm-3WS" secondAttribute="top" id="06W-R3-nLl"/>
+                                    <constraint firstItem="I3R-SZ-ivY" firstAttribute="leading" secondItem="qhz-Tm-3WS" secondAttribute="leading" id="SEJ-kQ-fL6"/>
+                                    <constraint firstAttribute="bottom" secondItem="I3R-SZ-ivY" secondAttribute="bottom" id="cy7-EG-ymo"/>
+                                    <constraint firstAttribute="trailing" secondItem="I3R-SZ-ivY" secondAttribute="trailing" id="uaL-mR-1um"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qhz-Tm-3WS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ogb-O8-aJi"/>
+                            <constraint firstItem="qhz-Tm-3WS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xh7-zA-5Ca"/>
+                            <constraint firstItem="qhz-Tm-3WS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="n2m-iQ-loo"/>
+                            <constraint firstItem="qhz-Tm-3WS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rSc-AQ-cgc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="I3R-SZ-ivY" id="9gb-pq-3hD"/>
+                        <outlet property="mainView" destination="qhz-Tm-3WS" id="2tX-3n-qgd"/>
+                        <outlet property="overlayView" destination="J5Z-KI-oPy" id="3Ws-f2-qxr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="twee" width="576" height="1024"/>
+    </resources>
+</document>
